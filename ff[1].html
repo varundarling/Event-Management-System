@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="slider.js"></script>
+<style>
+
+.sec1-main-bg {
+    background-image: url("https://cdn.discordapp.com/attachments/803924114112380929/1096446150455873667/nn.png");
+    background-size: cover;
+    height: 100vh;
+    font-family: "Bree Serif";
+}
+img {
+ 
+ 
+ }
+.sec1-card {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+.center-form{
+justify-content: center;
+display: block;
+margin: 25px 50px;
+border: 0px solid blue;
+padding: 50px;
+background-image: url("https://cdn.discordapp.com/attachments/803924114112380929/1090883929361354822/wp2564019.png");
+}
+
+.sec1-head {
+    color: rgb(255, 0, 0);
+    padding-top: 35px;
+    font-size: 22px;
+}
+.sec4-head {
+    color: rgb(255, 255, 255);
+    font: bold;
+    padding-top: 0px;
+    font-size: 60px;
+}
+.sec4-head1 {
+    color: rgb(255, 0, 0);
+    font: bold;
+    padding-top: 35px;
+    font-size: 40px;
+}
+.sec5-head {
+    color: rgb(255, 255, 255);
+    font: bold;
+    padding-top: 35px;
+    font-size: 50px;
+}
+.sec3-head {
+    color: #f19116;
+    font-size: 22px;
+}
+
+.sec1-para {
+    color: #7b8794;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.labela {
+    border-width: 0px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    font-family: "Georgia";
+    font-size: 16px;
+    padding: 6px;
+    width: 80px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.labelo {
+    border-width: 0px;
+    position: absolute;
+    right: 135px;
+    top: 50px;
+    font-family: "Georgia";
+    font-size: 16px;
+    padding: 6px;
+    width: 100px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.labele {
+    border-width: 0px;
+    position: absolute;
+    right: 290px;
+    top: 50px;
+    font-family: "Georgia";
+    font-size: 16px;
+    padding: 6px;
+    width: 0px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.labelh {
+    border-width: 0px;
+    position: absolute;
+    right: 360px;
+    top: 50px;
+    font-family: "Georgia";
+    font-size: 16px;
+    padding: 8px;
+    width: 0px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.buttonh3 {
+    background-color: #f19116;
+    border-width: 0px;
+    position: absolute;
+    right: 750px;
+    top: 688px;
+    display: inline;
+    border-radius: 50px;
+    font-family: "Georgia";
+    font-size: 16px;
+    padding: 6px;
+    width: 125px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.buttonb {
+    background-color: #f19116;
+    border-width: 0px;
+    border-radius: 50px;
+    margin:0 auto;
+    display: inline;
+    font-family: "Georgia";
+    font-size: 16px;
+    padding: 6px;
+    width: 125px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.buttonab {
+    background-color: #f19116;
+    border-width: 0px;
+    border-radius: 50px;
+    font-family: "Georgia";
+    font-size: 16px;
+    padding: 6px;
+    width: 125px;
+    position: relative;
+    color: #ffffff;
+    cursor: pointer;
+}
+.button2 {
+    background-color: #f19116;
+    border-width: 0px;
+    border-radius: 50px;
+    font-family: "Georgia";
+    padding: 6px;
+    width: 125px;
+    color: #ffffff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.sec2-main-bg {
+    background-image: url("https://cdn.discordapp.com/attachments/803924114112380929/1090305582663209132/simple-background-backgrounds-passion-simple-1-5c9b95d121456.png");
+    background-size: cover;
+    height: 100vh;
+    font-family: "Bree Serif";
+    padding: 10px;
+}
+.sec4-main-bg {
+    background-image: url("https://cdn.discordapp.com/attachments/803924114112380929/1094966033116315879/abstract-modern-cool-geometric-pattern-background-vector.png");
+    background-size: cover;
+    height: 100vh;
+    font-family: "Bree Serif";
+    padding: 10px;
+}
+
+.sec2-card {
+    background-color: #ffffff;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.sec2-img {
+    width: 150px;
+}
+
+.sec2-card-head {
+    font-size: 21px;
+    margin-left: 5px;
+    margin-top: 8px;
+    color: darkblue;
+}
+
+.sec2-para {
+    font-size: 11px;
+    padding-top: 0px;
+    margin-left: 5px;
+}
+
+.sec3-para {
+    font-size: 14px;
+    padding-top: 0px;
+}
+
+.sec3-main {
+    background-color: black;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.sec3-img1 {
+    height: 40vh;
+    width: 100vw;
+}
+
+.sec3-img2 {
+    height: 20px;
+}
+
+.sec3-content {
+    padding: 16px;
+    font-family: "Bree Serif";
+}
+
+.hee {
+    background-color: #ffffff;
+  height:2px;
+}
+
+.sec4-card-head{
+    background-color: #ffffff;
+    font-family: "bree serif";
+    text-align: center;
+}
+.sec1-head55{
+    color: black;
+    font-weight: bold;
+
+}
+.sec1-card-bottom{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.margin44{
+    margin-right: 500px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.sec4-img {
+    width: 150px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h1 {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  border-radius: 500px;
+  color: #0044ff;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 32%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 297px;
+  text-align: center;
+  background-image: url("https://cdn.discordapp.com/attachments/803924114112380929/1096435396692418730/white-minimal-hexagons-background_79603-1452.png");
+  color: rgb(0, 0, 0);
+  background-size: cover;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: auto;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 400px;
+  height: 475px;
+}
+
+div.desc {
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(184, 177, 174);
+  color: rgb(0, 0, 0);
+}
+.sec1-card label:hover {
+  color:rgb(255, 128, 0);
+}
+    </style>
+</head>
+<body>
+    <div id="section1">
+        <div class="sec1-main-bg d-flex flex-column justify-content-center">
+        <h1 class="sec4-head">Event Management System</h1>
+            <div class="sec1-card ">
+                <label class="labelh" onclick="display('section1')">Home</label>
+                <label class="labele" onclick="display('section2')">Events</label>
+                <label class="labelo" onclick="display('section6')">Our Gallery</label>
+                <label class="labela" onclick="display('section7')">About Us</label>
+            </div>
+        </div>
+    </div>
+    <div id="section2">
+      <div class="sec2-main-bg"><br><br>
+          <h1 class="sec1-head">Our Events</h1><br><br>
+          <div class="sec2-card d-flex flex-row" onclick="display('section3')">
+              <img src="https://cdn.discordapp.com/attachments/803924114112380929/1090643235828932769/hp_1.png" class="sec2-img"/>
+              <div class="sec2-content">
+                  <h2 class="sec2-card-head">Birthday Party</h2>
+                  <p class="sec2-para">We welcomed her with the birthday song and hugs from everyone. We all had an amazing time at the party. 
+                      Everybody socialized, we played party games, danced and had a lot of fun throughout the evening. The best part was the fact 
+                      that everyone was happy with the celebration and there were smiles all around me.</p>
+              </div>
+          </div>
+          <div class="sec2-card d-flex flex-row" onclick="display('section4')">
+              <img src="https://cdn.discordapp.com/attachments/803924114112380929/1090643235086540920/fp.png" class="sec2-img" />
+              <div class="sec2-content">
+                  <h3 class="sec2-card-head">Fresher's Party</h3>
+                  <p class="sec2-para">Freshers week is one of the most talked about times in a student's first year at university. From creating
+                       hangovers from hell to friends for a lifetime, it can be one of the most memorable times for a new student.</p>
+              </div>
+          </div>
+          <div class="sec2-card d-flex flex-row" onclick="display('section5')">
+              <img src="https://cdn.discordapp.com/attachments/803924114112380929/1090643235468230776/ha.png" class="sec2-img" />
+              <div class="sec2-content">
+                  <h4 class="sec2-card-head">Anniversary</h4>
+                  <p class="sec2-para">An anniversary is the date on which an event took place or an institution was founded in a previous year, 
+                      and may also refer to the commemoration or celebration of that event.5</p>
+              </div>
+          </div>
+          <button class="buttonb" onclick="display('section1')">Back</button>
+      </div>
+  </div>
+    <div id="section3">
+      <div class="center-form"><b><font color="black"></font>
+        <h2 style="color: #000000"><b><u>Event Booking Form:</b></u></h2>
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="phone">Phone:</label>  
+        <input type="tel" id="phone" name="phone" required><br><br>
+        <label>Select your Event: </label>  
+          <select>  
+            <option value = "BP">Birthday Party</option> 
+            <option value = "FP">Freshers Party</option>     
+            <option value = "AY">Anniversary</option>    
+          </select><br><br>
+        <label for="venue">Venue:</label>
+        <input type="text" id="venue" name="venue"required><br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" required><br><br>
+        <label type="services">Additional Services:</label><br>
+        <input type="checkbox" id="Service1" name="Service1" value="Service">
+        <label for="service1"> Catering</label><br>
+        <input type="checkbox" id="service2" name="service2" value="Service">
+        <label for="service2">Wallet Parking</label><br>
+        <input type="checkbox" id="service3" name="service3" value="Service">
+        <label for="service3">Dancing Event</label><br>
+        <input type="checkbox" id="service4" name="service4" value="Service">
+        <label for="service4">Singing Event</label><br>
+    </form>
+        <button class="button2">Book Now</button>
+        <button class="buttonb" onclick="display('section2')">Back</button></b>
+        <button class="buttonh3" onclick="display('section1')">Home</button>
+    </div>
+    </div>
+    <div id="section4">
+      <div class="center-form"><b><font color="black"></font>
+        <h2 style="color: #000000"><b><u>Event Booking Form:</b></u></h2>
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="phone">Phone:</label>  
+        <input type="tel" id="phone" name="phone" required><br><br>
+        <label>Select your Event: </label>  
+          <select>  
+            <option value = "FP">Freshers Party</option>
+            <option value = "BP">Birthday Party</option>      
+            <option value = "AY">Anniversary</option>    
+          </select><br><br>
+        <label for="venue">Venue:</label>
+        <input type="text" id="venue" name="venue"required><br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" required><br><br>
+        <label type="services">Additional Services:</label><br>
+        <input type="checkbox" id="Service1" name="Service1" value="Service">
+        <label for="service1"> Catering</label><br>
+        <input type="checkbox" id="service2" name="service2" value="Service">
+        <label for="service2">Wallet Parking</label><br>
+        <input type="checkbox" id="service3" name="service3" value="Service">
+        <label for="service3">Dancing Event</label><br>
+        <input type="checkbox" id="service4" name="service4" value="Service">
+        <label for="service4">Singing Event</label><br>
+    </form>
+        <button class="button2">Book Now</button>
+        <button class="buttonb" onclick="display('section2')">Back</button></b>
+        <button class="buttonh3" onclick="display('section1')">Home</button>
+    </div>
+    </div>
+    <div id="section5">
+      <div class="center-form"><b><font color="black"></font>
+        <h2 style="color: #000000"><b><u>Event Booking Form:</b></u></h2>
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="phone">Phone:</label>  
+        <input type="tel" id="phone" name="phone" required><br><br>
+        <label>Select your Event: </label>  
+          <select>  
+            <option value = "AY">Anniversary</option>
+            <option value = "BP">Birthday Party</option>
+            <option value = "FP">Freshers Party</option>          
+          </select><br><br>
+        <label for="venue">Venue:</label>
+        <input type="text" id="venue" name="venue"required><br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" required><br><br>
+        <label type="services">Additional Services:</label><br>
+        <input type="checkbox" id="Service1" name="Service1" value="Service">
+        <label for="service1"> Catering</label><br>
+        <input type="checkbox" id="service2" name="service2" value="Service">
+        <label for="service2">Wallet Parking</label><br>
+        <input type="checkbox" id="service3" name="service3" value="Service">
+        <label for="service3">Dancing Event</label><br>
+        <input type="checkbox" id="service4" name="service4" value="Service">
+        <label for="service4">Singing Event</label><br>
+    </form>
+        <button class="button2">Book Now</button>
+        <button class="buttonb" onclick="display('section2')">Back</button></b>
+        <button class="buttonh3" onclick="display('section1')">Home</button>
+    </div>
+    </div>
+    <div id="section6">
+        <div class="sec4-card-head">
+            <div class="sec4-main-bg">
+            <h2 class="sec4-head">Our Gallery</h2>
+            <div class="sec4-card d-flex flex-row" onclick="display('section1')"></div>
+            <div class="gallery">
+              <a target="_blank" href="https://cdn.discordapp.com/attachments/803924114112380929/1094991798482522183/ff.jpg">
+                <img src="https://cdn.discordapp.com/attachments/803924114112380929/1094991798482522183/ff.jpg" alt="birthday party image" width="3000px" height="1000px">
+              </a>
+              <div class="desc">Our Sample Event pics of Birthday Party.</div>
+            </div>
+            
+            <div class="gallery">
+              <a target="_blank" href="https://cdn.discordapp.com/attachments/803924114112380929/1096428297925177434/140864088_686742181971290_1471508943793285657_n.png">
+                <img src="https://cdn.discordapp.com/attachments/803924114112380929/1096428297925177434/140864088_686742181971290_1471508943793285657_n.png" alt="Freshers party image" width="600" height="400">
+              </a>
+              <div class="desc">Our Sample Event pics of Fresher's Party.</div>
+            </div>
+            
+            <div class="gallery">
+              <a target="_blank" href="https://cdn.discordapp.com/attachments/803924114112380929/1096430060778561616/1604991287_small.png">
+                <img src="https://cdn.discordapp.com/attachments/803924114112380929/1096430060778561616/1604991287_small.png" alt="Northern Lights" width="600" height="400">
+              </a>
+              <div class="desc">Our Sample Event pics of Anniversary.</div>
+            </div><br><br>    
+            <button class="buttonb" onclick="display('section1')">Back</button>    
+                </div></div></div>
+
+          <div id="section7">
+            <div class="about-section">
+              <h2>About Us</h2><br>
+              <p>Learn more about EventBooking and our mission to improve
+                the lives of venue professionals around the world.</p>
+              <footer>
+                <p>Developed By: Varun and Team .<br>
+                <a href="mailto:hege@example.com">samplemail@gmail.com</a></p>
+                <p>Our Mobile Number : <a href="mobilenumber">6309269814</a></p>
+              </footer><br><br>
+              <button class="buttonab" onclick="display('section1')">Back</button>
+            </div>
+        </div></div>
+        <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>
